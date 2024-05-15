@@ -32,13 +32,13 @@ Complete the exercise in the space below:
 console.log('Exercise 2 Result:', isAdult(21));
 
 const isAdult = (age) => {
-  if age >= 18 {
+  if (age >= 18) {
     return 'adult';
-    else age < 18 {
+  } else {
       return 'minor';
-    }
   }
-}
+  }
+
   //================================================================
   /*
 Exercise 3: isCharAVowel()
@@ -53,10 +53,11 @@ Complete the exercise in the space below:
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
 const isCharAVowel = (char) => {
-  if (char === 'a')|| (char === 'e' ) || (char === 'i' ) || (char === 'o' ) || (char === 'u' )}
-return true;
-else {
-  return false;
+  if ((char === 'a') || (char === 'e' ) || (char === 'i' ) || (char === 'o' ) || (char === 'u' )){
+    return true;
+  }else {
+    return false;
+  }
 }
 //================================================================
 /*
@@ -141,9 +142,12 @@ Complete the exercise in the space below:
 console.log('Exercise 8 Result:', maxOfThree(5, 10, 8));
 // with 5, 10, 8 the largest number is 10
 const maxofThree = (x, y, z) => {
-  if (x >= y && x >= z) 
+  if (x >= y && x >= z){ 
   return x;
-else if (y >= x && y >= z)
+  }  
+else if (y >= x && y >= z){
+  return y;
+}
 }
 //================================================================
 /*
@@ -160,7 +164,6 @@ Complete the exercise in the space below:
     return bill * tip / 100;
  }
 console.log('Exercise 9 Result:', calculateTip(50, 20));
-}
 //================================================================
 /*
 Exercise 10: convertTemperature()
@@ -175,8 +178,9 @@ Complete the exercise in the space below:
 // with temperature 32 and dealing with celsius temperature
 console.log('Exercise 10 Result:', convertTemperature(32, "C"));
 let convertTemperature = (temp , scale ) => { 
-  if (scale === 'c) 
-    return temp * 9/5 + 32;
+  if (scale === 'c') {
+  return temp * 9/5 + 32;
+}
   else { 
     return (temp - 32) * 5/9;
   }
@@ -201,7 +205,7 @@ let basicCalculator = (x, y, operation) => {
     return x - y;
   }
   }
-}console.log('Exercise 11 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 11 Result:', basicCalculator(10, 5, "subtract"));
 //================================================================
 /*
 Exercise 12: calculateGrade()
@@ -218,12 +222,13 @@ console.log('Exercise 12 Result:', calculateGrade(85));
 let calculateGrade = (score) => {
   if (score >= 90) { 
     return 'A';
-    else if (score >= 80) {
+   } else if (score >= 80) {
       return 'B';
-      else if (score >= 70) {
+    } else if (score >= 70) {
         return 'c';
-      } else if (score >= 60)
-  } return 'D';
+      } else if (score >= 60){
+        return 'D';
+  } 
     else { 
       return 'F';
     }
@@ -253,11 +258,13 @@ Exercise 14: numArgs()
 Challenge yourself with numArgs. This function should return the count of arguments passed to it when called.
 
 Complete the exercise in the space below:
-*/  (need help with this one)...
-console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4));
-git add -A 
-git commit -m 
-git push origin main
+*/ 
+//  (need help with this one)...
+// console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4));
+// git add -A 
+// git commit -m 
+// git push origin main
+
 
 
 
